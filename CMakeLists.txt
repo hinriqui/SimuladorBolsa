@@ -13,6 +13,8 @@ endif()
 project(SimuladorBolsa VERSION 0.1 LANGUAGES CXX C)
 message("-- Project name ${CMAKE_PROJECT_NAME}")
 
+add_executable(${PROJECT_NAME} main.cpp)
+
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 
 include(QuickfixPlatformSettings)
